@@ -4,7 +4,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InfoIcon from "@material-ui/icons/Info";
 import SendIcon from "@material-ui/icons/Send";
-import { Avatar, Link } from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
+import Link from "next/link";
 import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import React from "react";
@@ -25,7 +26,7 @@ function MobileViewList() {
           marginTop: "30px",
         }}
       />
-      <a
+      <Link
         href="/#about"
         className={styles.headernav}
         style={{
@@ -38,7 +39,7 @@ function MobileViewList() {
         <ListItem>
           <ListItemText primary="About" />
         </ListItem>
-      </a>
+      </Link>
 
       <Link
         href="/#skills"

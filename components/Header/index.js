@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from "react";
 import DrawerComponent from "./DrawerComponent";
 import styles from "./styles.module.css";
+import Link from "next/link";
 
 function Header() {
   const [visibilityDrawer, setVisibilityDrawer] = useState("none");
@@ -39,7 +40,7 @@ function Header() {
         }}
       >
         <span style={{ display: visibilityLinks }}>
-          <a
+          <Link
             href="/"
             onClick={(e) => {
               const menu = document.getElementById("about");
@@ -52,8 +53,8 @@ function Header() {
             }}
           >
             <p className={styles.headernav}>Services</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             onClick={(e) => {
               const menu = document.getElementById("skills");
@@ -66,8 +67,8 @@ function Header() {
             }}
           >
             <p className={styles.headernav}>Pricing</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             onClick={(e) => {
               const menu = document.getElementById("projects");
@@ -80,8 +81,8 @@ function Header() {
             }}
           >
             <p className={styles.headernav}>Projects</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             onClick={(e) => {
               const menu = document.getElementById("socials");
@@ -94,8 +95,8 @@ function Header() {
             }}
           >
             <p className={styles.headernav}>Contact</p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             onClick={(e) => {
               const menu = document.getElementById("about");
@@ -108,7 +109,7 @@ function Header() {
             }}
           >
             <p className={styles.headernav}>About</p>
-          </a>
+          </Link>
         </span>
         <span style={{ display: visibilityDrawer }}>
           <DrawerComponent />
