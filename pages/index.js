@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import IntroContainer from "../components/IntroContainer/IntroContainer";
 import OurServices from "../components/OurServices";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <IntroContainer />
       <OurServices />
+      <Footer />
     </div>
   );
 }

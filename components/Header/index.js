@@ -57,20 +57,6 @@ function Header() {
           <Link
             href="/"
             onClick={(e) => {
-              const menu = document.getElementById("skills");
-              e.preventDefault();
-              menu &&
-                menu.scrollIntoView({ behavior: "smooth", block: "start" });
-              // if (window.location.href!='http://localhost:3000/') {
-              //   location.href = '/#about';
-              // }
-            }}
-          >
-            <p className={styles.headernav}>Pricing</p>
-          </Link>
-          <Link
-            href="/"
-            onClick={(e) => {
               const menu = document.getElementById("projects");
               e.preventDefault();
               menu &&

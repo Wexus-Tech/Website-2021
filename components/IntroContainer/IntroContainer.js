@@ -9,7 +9,7 @@ function IntroContainer() {
         <h3>Need help with your business?</h3>
         <p>We got you covered.</p>
         <button style={{ marginTop: 20 }} className={styles.btn}>
-          Get Started
+          Contact Us
         </button>
       </div>
       <div className={styles.rightContainer}>

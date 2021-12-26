@@ -9,6 +9,7 @@
     #8e75f2 38.6%,
     #ee9ae5 102.93%
   );
+  /* background-color: #5961f9; */
   border-radius: 29px;
   height: 43vh;
   min-height: 330px;
@@ -19,7 +20,15 @@
 }
 
 .leftContainer {
-  padding: 30px;
+  padding: 50px;
+}
+
+.leftContainer h3 {
+  font-size: 38px;
+}
+
+.leftContainer p {
+  font-size: 24px;
 }
 
 .rightContainer {

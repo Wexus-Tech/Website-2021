@@ -10,13 +10,14 @@ import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import React from "react";
 import styles from "./styles.module.css";
+import logo from "../../public/assets/images/logo.png";
 
 function MobileViewList() {
   return (
     // user?(
     <List>
       <Avatar
-        src="https://i.ibb.co/Bswp8RS/avi.jpg"
+        src={logo}
         style={{
           height: 100,
           width: 100,
@@ -27,7 +28,7 @@ function MobileViewList() {
         }}
       />
       <Link
-        href="/#about"
+        href="/#services"
         className={styles.headernav}
         style={{
           color: "#000",
@@ -37,23 +38,7 @@ function MobileViewList() {
         }}
       >
         <ListItem>
-          <ListItemText primary="About" />
-        </ListItem>
-      </Link>
-
-      <Link
-        href="/#skills"
-        className={styles.headernav}
-        style={{
-          color: "#000",
-          opacity: 0.5,
-          display: "flex",
-          alignItems: "center",
-          textDecoration: "none",
-        }}
-      >
-        <ListItem>
-          <ListItemText primary="Skills" />
+          <ListItemText primary="Services" />
         </ListItem>
       </Link>
 
@@ -72,8 +57,9 @@ function MobileViewList() {
           <ListItemText primary="Projects" />
         </ListItem>
       </Link>
+
       <Link
-        href="/#socials"
+        href="/#contact"
         className={styles.headernav}
         style={{
           color: "#000",
@@ -84,7 +70,22 @@ function MobileViewList() {
         }}
       >
         <ListItem>
-          <ListItemText primary="Socials" />
+          <ListItemText primary="Contact" />
+        </ListItem>
+      </Link>
+      <Link
+        href="/#about"
+        className={styles.headernav}
+        style={{
+          color: "#000",
+          opacity: 0.5,
+          display: "flex",
+          alignItems: "center",
+          textDecoration: "none",
+        }}
+      >
+        <ListItem>
+          <ListItemText primary="About" />
         </ListItem>
       </Link>
       <hr style={{ color: "#636262", width: "90%", opacity: 0.2 }} />
