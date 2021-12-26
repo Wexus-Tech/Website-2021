@@ -7,7 +7,10 @@ import graph from "../../public/assets/images/graph.png";
 function ServiceCard({ title, id }) {
   return (
     <div className={styles.wrapper}>
+      {/* <div className={styles.imageElement}> */}
       <Image src={id == 1 ? phone : id == 2 ? rocket : graph} />
+      {/* </div> */}
+
       <h3 style={{ textAlign: "center" }}>{title}</h3>
       <p style={{ textAlign: "center", fontSize: "12px", marginTop: "-10px" }}>
         Read More

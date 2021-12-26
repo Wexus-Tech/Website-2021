@@ -19,3 +19,20 @@
   background: linear-gradient(135deg, #5961f9 0%, #ee9ae5 100%);
   box-shadow: 0px 4px 4px #5961f9;
   /* transition: 0.5s; */
+
+.imageElement {
+  animation: MoveUpDown 2s linear infinite;
+  position: relative !important;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
