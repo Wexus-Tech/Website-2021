@@ -11,8 +11,8 @@
   );
   /* background-color: #5961f9; */
   border-radius: 29px;
-  height: 43vh;
-  min-height: 330px;
+  height: 50vh;
+  min-height: 350px;
   /* max-height: 500px; */
   margin-top: 90px;
   color: #fff;
@@ -32,10 +32,10 @@
 }
 
 .rightContainer {
-  width: 50%;
+  width: 55%;
   display: block;
   margin-left: auto;
-  max-width: 500px;
+  max-width: 600px;
   animation: MoveUpDown 2s linear infinite;
   position: relative !important;
   left: 0;

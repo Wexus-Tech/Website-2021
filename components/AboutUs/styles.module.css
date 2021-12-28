@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  background: linear-gradient(135deg, #5bdccc 0%, #65afe0 52.08%, #736efe 100%);
+  border-radius: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  color: #fff;
+  padding: 30px;
+  align-items: center;
+  text-align: right;
+}
+
+.wrapper h1 {
+  font-size: 38px;
+  padding-right: 30px;
+}
+.wrapper h3 {
+  font-size: 28px;
+  padding-right: 30px;
+}
+
+.wrapper p {
+  font-size: 24px;
+  /* font-weight: 300; */
+  line-height: 33.5px;
+}
+
+.textInfo {
+  width: 100%;
+}
+.imageDiv {
+  width: 50%;
+  display: flex;
+  margin-right: auto;
+  animation: MoveUpDown 2s linear infinite;
+  position: relative !important;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
+.textInfo p {
+  padding: 30px;
+  padding-left: 0px;
+}
