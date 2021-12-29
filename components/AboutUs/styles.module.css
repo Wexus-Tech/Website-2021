@@ -41,6 +41,37 @@
   position: relative !important;
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 3rem;
+    padding: 1.2rem;
+    text-align: center;
+  }
+
+  .textInfo {
+    width: 100%;
+  }
+
+  .textInfo h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .textInfo p {
+    font-size: 1.2rem;
+    padding: 0;
+  }
+
+  .imageDiv {
+    width: 90%;
+    display: flex;
+    animation: moveUpDown 1.75s linear infinite;
+    position: relative !important;
+  }
+}
+
 /* Animations */
 
 @keyframes moveUpDown {
