@@ -6,22 +6,18 @@ function OurServices() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.info}>
-        <p style={{ color: "#010851", fontSize: "24px", fontWeight: "bold" }}>
-          What we have to offer
-        </p>
+        <p>What we have to offer</p>
         <hr style={{ marginTop: -10 }} />
       </div>
       <div className={styles.cards}>
-        <ServiceCard title="UI/UX Design" id={1} />
+        <ServiceCard title="UI/UX Design" imgSrc="/assets/images/phone.png" />
         <ServiceCard
-          title="Web/App
-                Development"
-          id={2}
+          title="Web/App Development"
+          imgSrc="/assets/images/rocket.png"
         />
         <ServiceCard
-          title="Digital
-Marketing"
-          id={3}
+          title="Digital Marketing"
+          imgSrc="/assets/images/graph.png"
         />
       </div>
     </div>

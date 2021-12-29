@@ -1,15 +1,16 @@
 import Image from "next/image";
 import styles from "./styles.module.css";
-import phone from "../../public/assets/images/phone.png";
-import rocket from "../../public/assets/images/rocket.png";
-import graph from "../../public/assets/images/graph.png";
 
-function ServiceCard({ title, id }) {
+function ServiceCard({ title, imgSrc }) {
   return (
     <div className={styles.wrapper}>
-      {/* <div className={styles.imageElement}> */}
-      <Image src={id == 1 ? phone : id == 2 ? rocket : graph} />
-      {/* </div> */}
+      <Image
+        src={imgSrc}
+        width={225}
+        height={225}
+        alt={title}
+        className={styles.image}
+      />
 
       <h3 style={{ textAlign: "center" }}>{title}</h3>
       <p style={{ textAlign: "center", fontSize: "12px", marginTop: "-10px" }}>
