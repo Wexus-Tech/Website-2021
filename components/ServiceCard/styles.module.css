@@ -12,6 +12,7 @@
   align-items: center;
   transition: 0.2s ease-in-out;
   background-size: 200% 200%;
+  cursor: pointer;
 
   -webkit-animation: gradientAnimation 3s ease infinite;
   -moz-animation: gradientAnimation 3s ease infinite;

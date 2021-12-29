@@ -4,25 +4,34 @@ import styles from "./styles.module.css";
 import Link from "next/link";
 
 function Header() {
-  const [visibilityDrawer, setVisibilityDrawer] = useState("none");
-  const [visibilityLinks, setVisibilityLinks] = useState("flex");
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     if (process.browser) {
       if (window.innerWidth < 800) {
-        setVisibilityDrawer("flex");
-        setVisibilityLinks("none");
+        setOpen(false);
       }
     }
   }, []);
+
+  if (process.browser) {
+    window.addEventListener("resize", () => {
+      if (window.innerWidth < 800) {
+        setOpen(false);
+      } else {
+        setOpen(true);
+      }
+    });
+  }
 
   return (
     <div className={styles.header}>
       <Link href="/" passHref={true}>
         <h1 className={styles.brand}>WEXUS</h1>
       </Link>
-      <div className={styles.links}>
-        <span style={{ display: visibilityLinks }}>
+
+      {open && (
+        <div className={styles.links}>
           <Link
             href="/"
             passHref={true}
@@ -74,11 +83,9 @@ function Header() {
           >
             <p className={styles.link}>About</p>
           </Link>
-        </span>
-        <span style={{ display: visibilityDrawer }}>
-          <DrawerComponent />
-        </span>
-      </div>
+        </div>
+      )}
+      {!open && <DrawerComponent />}
     </div>
   );
 }

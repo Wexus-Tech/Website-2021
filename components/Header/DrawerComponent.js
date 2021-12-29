@@ -2,9 +2,9 @@ import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
 import MobileViewList from "./MobileViewList";
+import styles from "./styles.module.css";
 
 const useStyles = makeStyles({
   list: {
@@ -56,9 +56,9 @@ export default function TemporaryDrawer() {
     <div>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
+          <div onClick={toggleDrawer(anchor, true)} className={styles.menu}>
             <MenuIcon fontSize="large" style={{ color: "#333333" }} />
-          </Button>
+          </div>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
