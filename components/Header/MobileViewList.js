@@ -28,6 +28,7 @@ function MobileViewList() {
         }}
       />
       <Link
+        passHref={true}
         href="/#services"
         className={styles.headernav}
         style={{
@@ -43,6 +44,7 @@ function MobileViewList() {
       </Link>
 
       <Link
+        passHref={true}
         href="/#projects"
         className={styles.headernav}
         style={{
@@ -59,6 +61,7 @@ function MobileViewList() {
       </Link>
 
       <Link
+        passHref={true}
         href="/#contact"
         className={styles.headernav}
         style={{
@@ -74,6 +77,7 @@ function MobileViewList() {
         </ListItem>
       </Link>
       <Link
+        passHref={true}
         href="/#about"
         className={styles.headernav}
         style={{
