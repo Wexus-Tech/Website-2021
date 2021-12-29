@@ -1,55 +1,39 @@
-.wrapper {
-  background: linear-gradient(135deg, #ee9ae5, #5961f9);
+.card {
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 42px;
   color: var(--white);
-  font-size: 1rem;
-  width: 30%;
+  font-size: 1.1rem;
+  width: 25%;
   margin: 1.5rem;
   height: 55vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: 0.2s ease-in-out;
   background-size: 200% 200%;
   cursor: pointer;
 
+  padding: 30px;
   -webkit-animation: gradientAnimation 3s ease infinite;
   -moz-animation: gradientAnimation 3s ease infinite;
   -o-animation: gradientAnimation 3s ease infinite;
   animation: gradientAnimation 3s ease infinite;
 }
 
-.wrapper:hover {
-  width: 40%;
-  font-size: 1.4rem;
+.card:hover {
+  /* width: 30%; */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  transform: scale(1.035);
+  border-radius: 35px;
 }
-
-.imageElement {
-  animation: moveUpDown 2s linear infinite;
+.imageDiv {
+  /* animation: moveUpDown 2s linear infinite; */
   position: relative !important;
   left: 0;
   bottom: 0;
 }
-
-.image:hover {
-  animation: moveUpDown 2s linear infinite;
+.imageDiv:hover {
+  animation: moveUpDown 1s linear;
 }
-
-@media (max-width: 800px) {
-  .wrapper {
-    border-radius: 30px;
-    font-size: 1.5rem;
-    width: 100%;
-    height: 60vh;
-  }
-
-  .image {
-    animation: moveUpDown 2s linear infinite;
-  }
-}
-
-/* Aniamtions */
 
 @keyframes moveUpDown {
   0%,

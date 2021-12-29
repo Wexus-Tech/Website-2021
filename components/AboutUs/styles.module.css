@@ -9,7 +9,7 @@
   padding: 3rem;
   align-items: center;
   text-align: right;
-
+  /* transition: 1s ease-in-out; */
   background-size: 200% 200%;
 
   -webkit-animation: gradientAnimation 5s ease infinite;
@@ -17,6 +17,10 @@
   -o-animation: gradientAnimation 5s ease infinite;
   animation: gradientAnimation 5s ease infinite;
 }
+
+/* .wrapper:hover {
+  text-align: left;
+} */
 
 .textInfo {
   width: 80%;

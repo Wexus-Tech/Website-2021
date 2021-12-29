@@ -1,0 +1,36 @@
+.flexDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 65vh;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.flexDiv::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  /* display: flex;
+  margin-left: auto;
+  margin-right: auto; */
+  text-align: left;
+  margin-top: 5rem;
+}
+
+.wrapper h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ea5455;
+}
+
+.imageDiv {
+  width: 25%;
+  margin: 1.5rem;
+  height: 55vh;
+}

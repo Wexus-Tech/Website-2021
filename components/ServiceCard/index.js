@@ -13,7 +13,10 @@ function ServiceCard({ title, imgSrc }) {
       />
 
       <h3 style={{ textAlign: "center" }}>{title}</h3>
-      <p style={{ textAlign: "center", fontSize: "12px", marginTop: "-10px" }}>
+      <p
+        className={styles.readMore}
+        style={{ textAlign: "center", fontSize: "12px", marginTop: "-10px" }}
+      >
         Read More
       </p>
     </div>
