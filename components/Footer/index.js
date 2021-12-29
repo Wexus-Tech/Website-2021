@@ -1,5 +1,4 @@
 import styles from "./styles.module.css";
-import bulb from "../../public/assets/images/bulb.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,11 +7,17 @@ import {
   faLinkedin,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+
 function Footer() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.leftContainer}>
-        <Image src={bulb} height={225} width={225} />
+        <Image
+          src="/assets/images/bulb.png"
+          height={225}
+          width={225}
+          alt="Bulb"
+        />
       </div>
       <div className={styles.rightContainer}>
         <div style={{ margin: 10 }}>
@@ -24,13 +29,10 @@ function Footer() {
         </div>
         <div style={{ margin: 10, textAlign: "right" }}>
           <h3>Socials</h3>
-          {/* <p>Your personalised techventure</p> */}
           <div
             className={styles.socialLinks}
             style={{
               display: "flex",
-              // alignItems: "center",
-              // justifyContent: "end",
               marginLeft: "auto",
               paddingBottom: 30,
             }}

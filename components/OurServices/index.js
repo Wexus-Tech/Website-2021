@@ -1,6 +1,5 @@
 import ServiceCard from "../ServiceCard";
 import styles from "./styles.module.css";
-import phone from "../../public/assets/images/phone.png";
 
 function OurServices() {
   return (
