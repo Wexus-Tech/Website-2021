@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
 
 :root {
-  --primary-color: #ee9ae5;
-  --main-color: #8e75f2;
+  --primary-color: #383fbb;
+  --secondary-color: #8e75f2;
+  --main-color: #ee9ae5;
   --bg-color: #ffffff;
+  --black: #000000;
+  --grey: #5e5e5e;
+  --light-grey: #f2f2f2;
 }
 
 html,
@@ -43,11 +47,11 @@ input[type="number"] {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--main-color);
+  background: var(--primary-color);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color);
+  background: var(--secondary-color);
 }

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import DrawerComponent from "./DrawerComponent";
 import styles from "./styles.module.css";
 import Link from "next/link";
@@ -6,6 +6,7 @@ import Link from "next/link";
 function Header() {
   const [visibilityDrawer, setVisibilityDrawer] = useState("none");
   const [visibilityLinks, setVisibilityLinks] = useState("flex");
+
   useEffect(() => {
     if (process.browser) {
       if (window.innerWidth < 800) {
@@ -16,32 +17,15 @@ function Header() {
   }, []);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        padding: 0,
-        paddingLeft: 20,
-        top: 0,
-        position: "fixed",
-        zIndex: 100,
-        backgroundColor: "#fff",
-        width: "100vw",
-        // borderBottom: "1px solid #ededed",
-      }}
-    >
-      <h1 style={{ textAlign: "left", width: "auto" }}>WEXUS</h1>
-      <div
-        style={{
-          display: "flex",
-          paddingRight: 10,
-          alignItems: "center",
-          marginLeft: "auto",
-          justifyContent: "end",
-        }}
-      >
+    <div className={styles.header}>
+      <Link href="/" passHref={true}>
+        <h1 className={styles.brand}>WEXUS</h1>
+      </Link>
+      <div className={styles.links}>
         <span style={{ display: visibilityLinks }}>
           <Link
             href="/"
+            passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("about");
               e.preventDefault();
@@ -52,49 +36,43 @@ function Header() {
               // }
             }}
           >
-            <p className={styles.headernav}>Services</p>
+            <p className={styles.link}>Services</p>
           </Link>
           <Link
             href="/"
+            passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("projects");
               e.preventDefault();
               menu &&
                 menu.scrollIntoView({ behavior: "smooth", block: "start" });
-              // if (window.location.href!='http://localhost:3000/') {
-              //   location.href = '/#about';
-              // }
             }}
           >
-            <p className={styles.headernav}>Projects</p>
+            <p className={styles.link}>Projects</p>
           </Link>
           <Link
             href="/"
+            passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("socials");
               e.preventDefault();
               menu &&
                 menu.scrollIntoView({ behavior: "smooth", block: "start" });
-              // if (window.location.href!='http://localhost:3000/') {
-              //   location.href = '/#about';
-              // }
             }}
           >
-            <p className={styles.headernav}>Contact</p>
+            <p className={styles.link}>Contact</p>
           </Link>
           <Link
             href="/"
+            passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("about");
               e.preventDefault();
               menu &&
                 menu.scrollIntoView({ behavior: "smooth", block: "start" });
-              // if (window.location.href!='http://localhost:3000/') {
-              //   location.href = '/#about';
-              // }
             }}
           >
-            <p className={styles.headernav}>About</p>
+            <p className={styles.link}>About</p>
           </Link>
         </span>
         <span style={{ display: visibilityDrawer }}>

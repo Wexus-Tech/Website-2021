@@ -1,15 +1,42 @@
-.headernav {
-  margin-right: 10px;
-  padding: 10px;
-  color: grey;
-  font-weight: 500;
-  /* font-family: "EBGaramondRegular"; */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0vw 5vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--bg-color);
+  width: 100vw;
+}
+
+.brand {
   cursor: pointer;
 }
-.headernav:hover {
-  background-color: #f2f2f2;
-  color: #000 !important;
+
+.brand:hover {
+  color: var(--primary-color);
+  transition: 0.2s;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.link {
+  margin-right: 10px;
+  padding: 10px;
+  color: var(--grey);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: var(--light-grey);
+  color: var(--black) !important;
   border-radius: 10px;
-  border: 0px solid #fff;
+  border: 0px solid var(--white);
   transition: 0.25s;
 }
