@@ -5,44 +5,73 @@
   margin-right: auto;
   background: linear-gradient(
     136.29deg,
-    #5961f9 0%,
-    #8e75f2 38.6%,
-    #ee9ae5 102.93%
+    var(--primary-color),
+    var(--secondary-color),
+    var(--main-color)
   );
-  /* background-color: #5961f9; */
   border-radius: 29px;
   height: 50vh;
-  min-height: 350px;
-  /* max-height: 500px; */
-  margin-top: 90px;
-  color: #fff;
+  margin-top: 6rem;
+  color: var(--white);
   align-items: center;
+
+  background-size: 200% 200%;
+
+  -webkit-animation: gradientAnimation 10s ease infinite;
+  -moz-animation: gradientAnimation 10s ease infinite;
+  -o-animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 .leftContainer {
-  padding: 50px;
+  padding: 5rem;
 }
 
 .leftContainer h3 {
-  font-size: 38px;
+  width: 80%;
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
 }
 
 .leftContainer p {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .rightContainer {
-  width: 55%;
+  width: 60%;
   display: block;
   margin-left: auto;
   max-width: 600px;
-  animation: MoveUpDown 2s linear infinite;
+  animation: moveUpDown 2s linear infinite;
   position: relative !important;
   left: 0;
   bottom: 0;
 }
 
-@keyframes MoveUpDown {
+.btn {
+  width: auto;
+  padding: 0.75rem 1rem;
+  background-color: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--white);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.035);
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  box-shadow: 0 3px 10px var(--shadow);
+  transition: 0.2s;
+}
+
+/* Animations */
+@keyframes moveUpDown {
   0%,
   100% {
     bottom: 0;
@@ -52,25 +81,47 @@
   }
 }
 
-.btn {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 120px;
-  padding: 10px;
-  background-color: #fff;
-  color: #5961f9;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  font-weight: bolder;
-  transition: transform 0.5s ease-in-out;
-  cursor: pointer;
+@-webkit-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-
-.btn:hover {
-  transform: scale(1.035);
-  background-color: #fff;
-  color: #ee9ae5;
-  border: 2px solid #fff;
-  box-shadow: 0 3px 10px #5961f9;
-  transition: 0.5s;
+@-moz-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

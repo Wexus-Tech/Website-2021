@@ -1,5 +1,4 @@
 import styles from "./styles.module.css";
-import img from "../../public/assets/images/3dLaptop.png";
 import Image from "next/image";
 
 function IntroContainer() {
@@ -13,7 +12,12 @@ function IntroContainer() {
         </button>
       </div>
       <div className={styles.rightContainer}>
-        <Image src={img} />
+        <Image
+          src="/assets/images/3dLaptop.png"
+          width={1000}
+          height={900}
+          alt="Laptop"
+        />
       </div>
     </div>
   );
