@@ -1,23 +1,16 @@
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InfoIcon from "@material-ui/icons/Info";
-import SendIcon from "@material-ui/icons/Send";
 import { Avatar } from "@material-ui/core";
 import Link from "next/link";
-import PowerSettingsNewIcon from "@material-ui/icons/PowerSettingsNew";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import React from "react";
 import styles from "./styles.module.css";
-import logo from "../../public/assets/images/logo.png";
 
 function MobileViewList() {
   return (
-    // user?(
     <List>
       <Avatar
-        src={logo}
+        src="/assets/images/logo.png"
         style={{
           height: 100,
           width: 100,
