@@ -29,3 +29,34 @@
   align-items: center;
   width: 100%;
 }
+
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+  }
+
+  .info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .info p {
+    margin-top: 3rem;
+    color: var(--dark-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .info hr {
+    border: none;
+    border-top: 0.25px solid var(--dark-blue);
+    width: 50%;
+  }
+
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

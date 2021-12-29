@@ -35,6 +35,19 @@
   animation: moveUpDown 2s linear infinite;
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    border-radius: 30px;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .image {
+    animation: moveUpDown 2s linear infinite;
+  }
+}
+
 /* Aniamtions */
 
 @keyframes moveUpDown {
