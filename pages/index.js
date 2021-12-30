@@ -4,6 +4,8 @@ import Header from "../components/Header";
 import IntroContainer from "../components/IntroContainer/IntroContainer";
 import OurServices from "../components/OurServices";
 import Testimonials from "../components/Testimonials";
+// import Card from "../components/Projects/Card";
+import Projects from "../components/Projects/index.jsx";
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
       <Header />
       <IntroContainer />
       <OurServices />
+      <Projects />
       <AboutUs />
       <Testimonials />
       <Footer />
