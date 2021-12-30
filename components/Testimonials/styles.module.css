@@ -12,6 +12,7 @@
 
 .flexDiv::-webkit-scrollbar {
   display: none;
+  cursor: grab;
 }
 
 .wrapper {

@@ -47,6 +47,12 @@
   .image {
     animation: moveUpDown 2s linear infinite;
   }
+
+  .wrapper:hover {
+    width: 100%;
+    font-size: 1.4rem;
+    transform: scale(1.035);
+  }
 }
 
 /* Aniamtions */
