@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Sukoon",
+    "description": "Changing the world. One child at a time. An NGO that focuses on helping children.",
+    "url": "https://www.sukoonngo.com/"
+  },
+  {
+    "title": "Rentupg",
+    "description": "Rentupg is a rent app for students. Providing PG and rent to college students, looking for a place in a new city.",
+    "url": "https://rentupg.vercel.app/"
+  },
+  {
+    "title": "Anonimo",
+    "description": "An anonymous chatting app. You can just share the link and people can text you anonymously",
+    "url": "https://www.anonimo.fun/"
+  },
+  {
+    "title": "Flames",
+    "description": "A dating app, exclusively for college students.",
+    "url": "https://flamesweb.com/"
+  },
+  {
+    "title": "Photography Portfolio",
+    "description": "A photography portfolio to show off your photos. Fully integrated with a backend to add and update photos.",
+    "url": "https://jayeshphotography.vercel.app/"
+  }
+]

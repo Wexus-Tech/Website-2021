@@ -2,6 +2,8 @@ import Card from "./Card";
 import styles from "./styles.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import projects from "../../projects.json";
+
 function Projects() {
   const responsive = {
     desktop: {
@@ -20,6 +22,7 @@ function Projects() {
       slidesToSlide: 1, // optional, default to 1.
     },
   };
+
   return (
     <div className={styles.wrapper}>
       <h1 style={{ textAlign: "center" }}>Our Projects</h1>
@@ -32,10 +35,9 @@ function Projects() {
         autoPlaySpeed={3000}
         keyBoardControl={true}
       >
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {projects.map((project, index) => (
+          <Card key={index} project={project} />
+        ))}
       </Carousel>
     </div>
   );
