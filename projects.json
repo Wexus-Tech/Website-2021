@@ -1,5 +1,30 @@
 [
   {
+    "title": "Portfolio",
+    "description": "A personal portfolio",
+    "url": "https://www.avivashishta.com/"
+  },
+  {
+    "title": "Cassino Cafe",
+    "description": "A website for a restruant",
+    "url": "https://pizzacassino-pixysquare.vercel.app/"
+  },
+  {
+    "title": "Infinite Rider",
+    "description": "A game that will change your perception of flappy bird",
+    "url": "https://avivashishta.wixsite.com/infiniterider"
+  },
+  {
+    "title": "Simple Menus",
+    "description": "Revolutionizing menus in restraunts, so the expirience is never the same again",
+    "url": "https://avivashishta.wixsite.com/simplemenus"
+  },
+  {
+    "title": "Valiance",
+    "description": "A gaming company",
+    "url": "https://valiance.in/"
+  },
+  {
     "title": "Sukoon",
     "description": "Changing the world. One child at a time. An NGO that focuses on helping children.",
     "url": "https://www.sukoonngo.com/"
