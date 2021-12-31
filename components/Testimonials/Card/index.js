@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
-import img from "../../../public/assets/images/bulb.png";
 import Image from "next/image";
+
 function Card({ title, client, imgSrc }) {
   return (
     <div className={styles.card}>
