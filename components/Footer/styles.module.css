@@ -107,7 +107,7 @@
     flex-direction: column;
     border-radius: 20px;
     height: auto;
-    margin-top: -4rem;
+    margin-top: 0rem;
   }
 
   .rightContainer {

@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="contact">
       <div className={styles.leftContainer}>
         <Image
           src="/assets/images/bulb.png"

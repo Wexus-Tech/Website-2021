@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 function AboutUs() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="about">
       <div className={styles.imageDiv}>
         <Image
           src="/assets/images/computer.png"

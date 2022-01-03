@@ -33,10 +33,10 @@ function Header() {
       {open && (
         <div className={styles.links}>
           <Link
-            href="/"
+            href="/#services"
             passHref={true}
             onClick={(e) => {
-              const menu = document.getElementById("about");
+              const menu = document.getElementById("services");
               e.preventDefault();
               menu &&
                 menu.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -48,7 +48,7 @@ function Header() {
             <p className={styles.link}>Services</p>
           </Link>
           <Link
-            href="/"
+            href="/#projects"
             passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("projects");
@@ -60,10 +60,10 @@ function Header() {
             <p className={styles.link}>Projects</p>
           </Link>
           <Link
-            href="/"
+            href="/#contact"
             passHref={true}
             onClick={(e) => {
-              const menu = document.getElementById("socials");
+              const menu = document.getElementById("contact");
               e.preventDefault();
               menu &&
                 menu.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -72,7 +72,7 @@ function Header() {
             <p className={styles.link}>Contact</p>
           </Link>
           <Link
-            href="/"
+            href="/#about"
             passHref={true}
             onClick={(e) => {
               const menu = document.getElementById("about");

@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 
 function OurServices() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="services">
       <div className={styles.info}>
         <p>What we have to offer</p>
         <hr style={{ marginTop: -10 }} />

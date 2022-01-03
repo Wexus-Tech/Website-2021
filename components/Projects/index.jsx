@@ -24,7 +24,7 @@ function Projects() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="projects">
       <h1 style={{ textAlign: "center" }}>Our Projects</h1>
       <Carousel
         responsive={responsive}
