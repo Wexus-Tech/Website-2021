@@ -1,47 +1,30 @@
-import Dialog from "@mui/material/Dialog";
-import { useState } from "react";
 import ServiceCard from "../ServiceCard";
 import styles from "./styles.module.css";
 
 function OurServices() {
-  const [open, setOpen] = useState(false);
-  const [fullWidth, setFullWidth] = useState(true);
-  const [maxWidth, setMaxWidth] = useState("sm");
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.info}>
         <p>What we have to offer</p>
         <hr style={{ marginTop: -10 }} />
       </div>
-      <div className={styles.cards} onClick={handleClickOpen}>
-        <ServiceCard title="UI/UX Design" imgSrc="/assets/images/phone.png" />
+      <div className={styles.cards}>
         <ServiceCard
+          title="UI/UX Design"
+          id={1}
+          imgSrc="/assets/images/phone.png"
+        />
+        <ServiceCard
+          id={2}
           title="Web/App Development"
           imgSrc="/assets/images/rocket.png"
         />
         <ServiceCard
-          onClick={handleClickOpen}
+          id={3}
           title="Digital Marketing"
           imgSrc="/assets/images/graph.png"
         />
       </div>
-      <Dialog
-        fullWidth={fullWidth}
-        maxWidth={maxWidth}
-        open={open}
-        onClose={handleClose}
-      >
-        <div className={styles.modal}>hi</div>
-      </Dialog>
     </div>
   );
 }

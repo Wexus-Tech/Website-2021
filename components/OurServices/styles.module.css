@@ -60,19 +60,3 @@
     justify-content: center;
   }
 }
-
-.modal {
-  background: linear-gradient(135deg, #ee9ae5, #5961f9);
-  /* border-radius: 42px; */
-  color: var(--white);
-  font-size: 1rem;
-  width: 100%;
-  /* margin: 1.5rem; */
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s ease-in-out;
-  background-size: 200% 200%;
-}
