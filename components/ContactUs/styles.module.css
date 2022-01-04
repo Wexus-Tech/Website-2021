@@ -1,0 +1,136 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  position: relative;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 60vw;
+  padding: 2rem;
+  border-radius: 30px;
+  background: linear-gradient(
+    136.29deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--main-color)
+  );
+
+  background-size: 200% 200%;
+
+  -webkit-animation: gradientAnimation 10s ease infinite;
+  -moz-animation: gradientAnimation 10s ease infinite;
+  -o-animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.close {
+  position: absolute;
+  top: 1%;
+  left: 95%;
+  z-index: 500;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.input {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  width: 25vw;
+}
+
+.form textarea {
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 25vw;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+  height: 8rem;
+  resize: none;
+}
+
+.form button {
+  padding: 1rem;
+  color: var(--secondary-color);
+  border: none;
+  width: 8rem;
+  border-radius: 50px;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover {
+  box-shadow: 0 3px 10px var(--shadow);
+}
+
+/* Animations */
+
+@-webkit-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
