@@ -57,12 +57,12 @@ function ServiceCard({ id, title, imgSrc }) {
               className={styles.image}
             />
 
-            <h1 style={{ textAlign: "center" }}>{title}</h1>
+            <h2 style={{ textAlign: "center" }}>{title}</h2>
             <p
               className={styles.readMore}
               style={{
                 textAlign: "center",
-                fontSize: "20px",
+                fontSize: "16px",
                 marginTop: "-10px",
               }}
             >
