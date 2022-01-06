@@ -7,10 +7,18 @@ import {
   faLinkedin,
   faGoogle,
 } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
+import Contactus from "../ContactUs";
 
 function Footer() {
+  const [open, setOpen] = useState(false);
+
+  const closeContainer = () => {
+    setOpen(false);
+  };
   return (
     <div className={styles.wrapper} id="contact">
+      {open && <Contactus close={closeContainer} />}
       <div className={styles.leftContainer}>
         <Image
           src="/assets/images/bulb.png"
@@ -23,7 +31,11 @@ function Footer() {
         <div style={{ margin: 10 }}>
           <h3>Wexus</h3>
           <p>Your personalised techventure</p>
-          <button style={{ marginTop: 20 }} className={styles.btn}>
+          <button
+            style={{ marginTop: 20 }}
+            className={styles.btn}
+            onClick={() => setOpen(true)}
+          >
             Contact Us
           </button>
         </div>
@@ -39,7 +51,7 @@ function Footer() {
           >
             <a
               className={styles.headernav}
-              href="https://instagram.com/avi_vashishta29"
+              href="https://instagram.com/wexusofficial"
               style={{ marginTop: -20 }}
             >
               {" "}
@@ -63,7 +75,7 @@ function Footer() {
             </a>
             <a
               className={styles.headernav}
-              href="mailto: avivashishta@gmail.com"
+              href="mailto: simplysitestech@gmail.com"
               style={{ marginTop: -20, marginRight: -10 }}
             >
               {" "}

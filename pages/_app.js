@@ -53,6 +53,12 @@ function MyApp({ Component, pageProps }) {
           content="Modern Digital Solutions for your needs. Get yourself a website or an app, build your social media profile and advertise on top social media websites"
         />
         <meta itemProp="image" content="/logo.png" />
+        <link
+          rel="stylesheet"
+          media="screen, print, projection"
+          href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        />
+        <style>{`@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css)`}</style>
       </Head>
       <Component {...pageProps} />
     </>
