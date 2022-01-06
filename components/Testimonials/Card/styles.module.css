@@ -15,7 +15,7 @@
   padding: 2rem;
   min-height: 500px;
   background-size: 200% 200%;
-
+  overflow-y: hidden;
   -webkit-animation: gradientAnimation 3s ease infinite;
   -moz-animation: gradientAnimation 3s ease infinite;
   -o-animation: gradientAnimation 3s ease infinite;
@@ -45,6 +45,7 @@
     font-size: 1rem;
     height: min-content !important;
     margin-bottom: 50px;
+    overflow-y: hidden;
   }
 
   .card:hover {

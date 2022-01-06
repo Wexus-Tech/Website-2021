@@ -39,7 +39,10 @@ function Footer() {
             Contact Us
           </button>
         </div>
-        <div style={{ margin: 10, textAlign: "right" }}>
+        <div
+          className={styles.footerSocial}
+          style={{ margin: 10, textAlign: "right" }}
+        >
           <h3>Socials</h3>
           <div
             className={styles.socialLinks}
