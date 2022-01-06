@@ -11,6 +11,9 @@
   align-items: center;
 }
 
+.imgDiv span {
+  border-radius: 32px;
+}
 .form {
   position: relative;
   z-index: 200;
@@ -147,5 +150,23 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flexForm {
+    flex-direction: column !important;
+  }
+  .input {
+    width: 70vw;
+  }
+  .form textarea {
+    width: 70vw;
+  }
+  .imgDiv {
+    display: none !important;
+  }
+  .close {
+    left: 85%;
   }
 }

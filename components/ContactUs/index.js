@@ -9,6 +9,7 @@ function Contactus({ close }) {
           X
         </div>
         <div
+          className={styles.flexForm}
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -37,8 +38,15 @@ function Contactus({ close }) {
             <textarea placeholder="Your Message" />
             <button>Submit</button>
           </div>
-          <div style={{ marginLeft: "50px", display: "block" }}>
-            <Image src="/assets/images/computer.png" width="400" height="400" />
+          <div
+            className={styles.imgDiv}
+            style={{ marginLeft: "50px", display: "block" }}
+          >
+            <Image
+              src="/assets/images/transparentLogo.png"
+              width="400"
+              height="400"
+            />
           </div>
         </div>
       </form>
