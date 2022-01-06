@@ -38,3 +38,9 @@
   margin: 1.5rem;
   height: 55vh;
 }
+
+@media (max-width: 800px) {
+  .flexDiv {
+    margin-bottom: 70px !important;
+  }
+}
